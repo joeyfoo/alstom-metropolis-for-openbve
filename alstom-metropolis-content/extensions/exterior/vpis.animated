@@ -1,0 +1,31 @@
+﻿[Include]
+vpis_shell.csv
+Position = 0, 0, 0
+
+[Object]
+States = vpis_hr1.csv
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 24] * 0.1]
+
+[Object]
+States = vpis_hr2.csv
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.000277777777777778, 24]]
+
+[Object]
+States = vpis_mn1.csv
+TextureShiftYFunction = 0.1 * floor[mod[time * 0.0166666666666667, 60] * 0.1]
+
+[Object]
+States = vpis_mn2.csv
+TextureShiftYFunction = 0.1 * floor[time * 0.0166666666666667]
+
+[Object]
+States = vpis_doorsclosing.csv
+StateFunction = if[((leftDoors[0]+leftDoorsTarget)<1)&((leftDoors[0]+leftDoorsTarget)>0),0,-1]
+TextureShiftXFunction = if[leftDoorsTarget==0,value+0.1*delta,0]
+Position = 0, 0, -0.0025
+
+[Object]
+States = vpis_doorsclosing.csv
+StateFunction = if[((rightDoors[0]+rightDoorsTarget)<1)&((rightDoors[0]+rightDoorsTarget)>0),0,-1]
+TextureShiftXFunction = if[rightDoorsTarget==0,value+0.1*delta,0]
+Position = 0, 0, 0.0025

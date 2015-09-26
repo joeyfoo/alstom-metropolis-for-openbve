@@ -1,0 +1,14 @@
+﻿CreateMeshBuilder
+Cylinder, 4, -0.025, -0.025, 3
+RotateAll, 1, 0, 0, 90
+Translate, 0, 1.9, 0
+SetEmissiveColor, 255, 255, 255
+LoadTexture, grabpoles.png
+SetTextureCoordinates, 0, 0, 0
+SetTextureCoordinates, 1, 0, 1
+SetTextureCoordinates, 2, 0.5, 0
+SetTextureCoordinates, 3, 0.5, 1
+SetTextureCoordinates, 4, 1, 0
+SetTextureCoordinates, 5, 1, 1
+SetTextureCoordinates, 6, 0.5, 0
+SetTextureCoordinates, 7, 0.5, 1

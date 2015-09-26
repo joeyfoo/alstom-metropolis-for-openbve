@@ -1,0 +1,41 @@
+[Include]
+Dt_int.csv
+
+[Object]
+States = ctbc.csv
+Position = 1.005,0.85,11.315
+;M 0.035
+;FSB -0.035
+;EB -0.05
+TranslateZFunction = value + (if[powerNotch >= 1, 0.004375 * powerNotch, if[brakeNotchLinear == 6, -0.05, -0.007 * brakeNotchLinear]]-value)*delta*2.5
+
+
+[Object]
+States = ldoors_closed.csv, ldoors_open.csv
+StateFunction = leftDoors != 0
+
+
+[Object]
+States = rdoors_closed.csv, rdoors_open.csv
+StateFunction = rightDoors != 0
+
+[Object]
+States = modeselector.csv
+
+[Object]
+States = modeselector.csv
+Position = 1.083,0.85,11.298
+;R = 0.3
+;N = -0.6
+;F = 0
+RotateYFunction = if[reverserNotch==-1,0.3,if[reverserNotch==1,0,-0.6]]
+RotateYDamping = 30, 0.75
+
+[Object]
+States = speed.csv
+Position = 1.108,0.9625,11.5075
+;0 3.75
+;100 -1speedometer
+rotatexfunction = -(speedometer*0.155)+3.75
+rotateyfunction = -0.785398163; -1.11
+rotatezfunction = -1.57

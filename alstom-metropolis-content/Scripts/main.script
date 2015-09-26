@@ -1,0 +1,88 @@
+;EMERGENCY STOP BUTTON
+	;Plugin state 50
+		;0 = normal
+		;1 = activated
+	;Activation
+		[event] 
+			name = key down 
+			type = S
+			[handles] 
+				reverser = N 
+				power = N 
+				brakes = EMG 
+			[/handles]
+			[sound] 
+				index = 101
+				looping = false 
+			[/sound]
+		[/event]
+	;Deactivation (also closes ramp)
+		[event] 
+			name = key up
+			type = A1
+			[panel] 
+				index = 20
+				value = 0
+			[/panel]
+			[event]
+				name = countdown
+				interval = 6s
+				[release_handles /]
+			[/event]
+			[sound] 
+				index = 100
+				looping = false 
+			[/sound]
+		[/event]
+
+;Headlights
+	;Plugin state 21
+		;0 = normal
+		;1 = reversed
+	;Switch to normal default 3
+		[event] 
+			name = key down 
+			type = D3
+			[panel] 
+				index = 21
+				value = 0
+			[/panel]
+			[sound] 
+				index = 24
+				looping = false 
+			[/sound]
+		[/event]
+	;Switch to reverse default 4
+		[event] 
+			name = key down 
+			type = D4
+			[panel] 
+				index = 21
+				value = 1
+			[/panel]
+			[sound] 
+				index = 24
+				looping = false 
+			[/sound]
+		[/event]
+		
+;Detrainment ramp
+	;Plugin state 20
+		[event] 
+			name = key down 
+			type = B1 ;Home
+			[panel] 
+				index = 20
+				value = 3
+			[/panel]
+			[handles] 
+				reverser = N 
+				power = N 
+				brakes = EMG 
+			[/handles]
+			[sound] 
+				index = 102
+				looping = false 
+			[/sound]
+		[/event]
+	

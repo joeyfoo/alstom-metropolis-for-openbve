@@ -1,0 +1,10 @@
+[Include]
+bogie.csv
+Position = 0, -1.1, -8.4
+
+[Include]
+bogie.csv
+Position = 0, -1.1, 8.4
+
+[Include]
+undercarriage.csv

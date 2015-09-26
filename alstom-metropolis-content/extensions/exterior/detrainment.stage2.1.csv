@@ -1,0 +1,87 @@
+CreateMeshBuilder,
+AddVertex, -0.5, 1.9, -0.447
+AddVertex, 0.5, 1.9, -0.447
+AddVertex, 0.5, 1.25, -0.447
+AddVertex, -0.5, 1.25, -0.447
+AddFace,0,1,2,3
+LoadTexture, front_detrain1.png
+SetEmissiveColor, 255, 255, 255
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,1
+SetTextureCoordinates,3,0,1
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -0.5, 1.25, -0.447
+AddVertex, 0.5, 1.25, -0.447
+AddVertex, 0.5, 1.05, -0.25
+AddVertex, -0.5, 1.05, -0.25
+AddFace,0,1,2,3
+LoadTexture, front_detrain2.png
+SetEmissiveColor, 255, 255, 255
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,1
+SetTextureCoordinates,3,0,1
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -0.5, 1.05, -0.25
+AddVertex, 0.5, 1.05, -0.25
+AddVertex, 0.5, 0, 0
+AddVertex, -0.5, 0, 0
+AddFace,0,1,2,3
+LoadTexture, front_detrain3.png
+SetEmissiveColor, 255, 255, 255
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,1
+SetTextureCoordinates,3,0,1
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, 0.5, 1.9, -0.43
+AddVertex, -0.5, 1.9, -0.43
+AddVertex, -0.5, 0, 0
+AddVertex, 0.5, 0, 0
+AddFace,0,1,2,3
+LoadTexture, detrainment_ramp.png
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,1
+SetTextureCoordinates,3,0,1
+
+CreateMeshBuilder,
+AddVertex, 0.5, 1.9, -0.447
+AddVertex, -0.5, 1.9, -0.447
+AddVertex, -0.5, 1.9, -0.43
+AddVertex, 0.5, 1.9, -0.43
+AddFace,0,1,2,3
+SetColor,130,120,100
+
+CreateMeshBuilder,
+AddVertex, -0.5, 1.9, -0.447
+AddVertex, -0.5, 1.25, -0.447
+AddVertex, -0.5, 1.05, -0.25
+AddVertex, -0.5, 0, 0
+AddVertex, -0.5, 1.9, -0.43
+AddVertex, -0.5, 1.9, -0.447
+AddFace,0,1,2,4
+AddFace,2,3,4
+SetColor,130,120,100
+
+CreateMeshBuilder,
+AddVertex, 0.5, 1.9, -0.447
+AddVertex, 0.5, 1.25, -0.447
+AddVertex, 0.5, 1.05, -0.25
+AddVertex, 0.5, 0, 0
+AddVertex, 0.5, 1.9, -0.43
+AddVertex, 0.5, 1.9, -0.447
+AddFace,4,2,1,0
+AddFace,4,3,2
+SetColor,130,120,100
+
+
+
+TranslateAll,0,-1.9,0.42

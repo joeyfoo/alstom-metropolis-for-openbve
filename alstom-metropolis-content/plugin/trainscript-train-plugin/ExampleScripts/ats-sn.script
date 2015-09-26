@@ -1,0 +1,177 @@
+﻿; /--------\
+; | ATS-SN |
+; \--------/
+
+
+
+; When the simulation starts, we set the ATS lamp (index 0) to on (value 1).
+
+[panel]
+	index = 0
+	value = 1
+[/panel]
+
+
+
+; When passing an S long beacon (type 0) and the signal is red (signal 0),
+; we set the ATS lamp (index 0) to off (value 0),
+; set the ATS RUN lamp (index 1) to on (value 1),
+; play the alarm sound (index 0) in a loop,
+; stop the chime sound (index 1)
+; and start a countdown of 5 seconds.
+
+; After the countdown has run out,
+; we make the ATS RUN lamp (index 1) blink,
+; and activate the emergency brakes.
+
+[event]
+	name = beacon
+	type = 0
+	signal = 0
+	[panel]
+		index = 0
+		value = 0
+	[/panel]
+	[panel]
+		index = 1
+		value = 1
+	[/panel]
+	[sound]
+		index = 0
+		looped = yes
+	[/sound]
+	[stop_sound]
+		index = 1
+	[/stop_sound]
+	[event]
+		name = countdown
+		interval = 5 seconds
+		[panel]
+			index = 1
+			values = 1, 0
+			interval = 1.2 seconds
+		[/panel]
+		[handles]
+			reverser = N
+			power = N
+			brakes = EMG
+		[/handles]
+	[/event]
+[/event]
+
+
+
+; When passing an immediate stop beacon (type 1) and the signal is red (signal 0),
+; we set the ATS lamp (index 0) to off (value 0),
+; make the ATS RUN lamp (index 1) blink,
+; play the alarm sound (index 0) in a loop,
+; stop the chime sound (index 1)
+; and activate the emergency brakes.
+
+[event]
+	name = beacon
+	type = 1
+	signal = 0
+	[panel]
+		index = 0
+		value = 0
+	[/panel]
+	[panel]
+		index = 1
+		values = 1, 0
+		interval = 1.2 seconds
+	[/panel]
+	[sound]
+		index = 0
+		looped = yes
+	[/sound]
+	[stop_sound]
+		index = 1
+	[/stop_sound]
+	[handles]
+		reverser = N
+		power = N
+		brakes = EMG
+	[/handles]
+[/event]
+
+
+
+; When pressing the space key (S),
+; we set the ATS lamp (index 0) to on (value 1),
+; set the ATS RUN lamp (index 1) to off (value 0),
+; stop the alarm sound (index 0)
+; play the chime sound (index 1) in a loop,
+; and abort the countdown.
+
+; (Theoretically, this should only work if the countdown is
+; actually running, power is cut and the brakes are at least
+; in B1, but checking for these conditions is not yet possible.)
+
+[event]
+	name = key down
+	type = S
+	[panel]
+		index = 0
+		value = 1
+	[/panel]
+	[panel]
+		index = 1
+		value = 0
+	[/panel]
+	[stop_sound]
+		index = 0
+	[/stop_sound]
+	[sound]
+		index = 1
+		looped = yes
+	[/sound]
+	[abort_countdown /]
+[/event]
+
+
+
+; When pressing the insert key (A1),
+; we stop the chime sound (index 0).
+
+[event]
+	name = key down
+	type = A1
+	[stop_sound]
+		index = 1
+	[/stop_sound]
+[/event]
+
+
+
+; When pressing the home key (B1),
+; we set the ATS lamp (index 0) to on (value 1),
+; set the ATS RUN lamp (index 1) to off (value 0),
+; stop the alarm sound (index 0)
+; play the chime sound (index 1) in a loop,
+; and release the handles.
+
+; (Theoretically, this should only work if the reverser is
+; set to neutral, power is cut and the brakes are in emergency
+; position, but checking these conditions is not yet possible.)
+
+[event]
+	name = key down
+	type = B1
+	[panel]
+		index = 0
+		value = 1
+	[/panel]
+	[panel]
+		index = 1
+		value = 0
+	[/panel]
+	[stop_sound]
+		index = 0
+	[/stop_sound]
+	[sound]
+		index = 1
+		looped = yes
+	[/sound]
+	[release_handles /]	
+[/event]

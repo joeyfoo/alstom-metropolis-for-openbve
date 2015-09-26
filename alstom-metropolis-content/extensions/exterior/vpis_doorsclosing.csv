@@ -1,0 +1,28 @@
+﻿;Doors closing
+CreateMeshBuilder
+AddVertex,-0.295,2.115,-0.0775
+AddVertex,0.295,2.115,-0.0775
+AddVertex,0.295,2.039,-0.0775
+AddVertex,-0.295,2.039,-0.0775
+AddFace,0,1,2,3
+LoadTexture,vpisdoorsclosing.png
+SetEmissiveColor, 255, 255, 255
+SetTextureCoordinates,0,0.1,0
+SetTextureCoordinates,1,0.5,0
+SetTextureCoordinates,2,0.5,1
+SetTextureCoordinates,3,0.1,1
+SetDecalTransparentColor,0,0,255
+
+CreateMeshBuilder
+AddVertex,0.295,2.115,0.0775
+AddVertex,-0.295,2.115,0.0775
+AddVertex,-0.295,2.039,0.0775
+AddVertex,0.295,2.039,0.0775
+AddFace,0,1,2,3
+LoadTexture,vpisdoorsclosing.png
+SetEmissiveColor, 255, 255, 255
+SetTextureCoordinates,0,0.1,0
+SetTextureCoordinates,1,0.5,0
+SetTextureCoordinates,2,0.5,1
+SetTextureCoordinates,3,0.1,1
+SetDecalTransparentColor,0,0,255

@@ -1,0 +1,9 @@
+This package provides you with the TrainScript train plugin. In order to use the plugin in your train, place the following line in your ats.cfg:
+
+$trainscript-train-plugin\TrainScript.dll
+
+This will ensure that you use the latest version of the plugin. Of course, if you are satisfied with a particular version, you can also copy it directly to your train folder, but you might miss out on potential improvements or bugfixes this way.
+
+What is covered by the backward compatibility guarantee:
+
+TrainScript.dll

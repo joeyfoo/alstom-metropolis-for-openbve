@@ -1,0 +1,38 @@
+[Include]
+M_ext.csv
+M_int.animated
+gangway_a.csv
+gangway_c.csv
+grabpoles.animated
+bogie.animated
+Position = 0, 1.1, 0
+
+[Object]
+Position = -1,0, 0
+States = doorclosingindicator_off.csv, doorclosingindicator_on.csv
+StateFunction = if[((leftDoors[2]+leftDoorsTarget)<1)&((leftDoors[2]+leftDoorsTarget)>0),1,0]
+
+[Object]
+Position = 1,0, 0
+States = doorclosingindicator_off.csv, doorclosingindicator_on.csv
+StateFunction = if[((rightDoors[2]+rightDoorsTarget)<1)&((rightDoors[2]+rightDoorsTarget)>0),1,0]
+
+[Object]
+Position = 0,0,0
+States = doorsl1.csv
+TranslateZFunction = 0.7*if[leftDoors[2]>0.5,1,leftDoors[2]*2]
+
+[Object]
+Position = 0,0,0
+States = doorsl2.csv
+TranslateZFunction = -0.7*if[leftDoors[2]>0.5,1,leftDoors[2]*2]
+
+[Object]
+Position = 0,0,0
+States = doorsr1.csv
+TranslateZFunction = 0.7*if[rightDoors[2]>0.5,1,rightDoors[2]*2]
+
+[Object]
+Position = 0,0,0
+States = doorsr2.csv
+TranslateZFunction = -0.7*if[rightDoors[2]>0.5,1,rightDoors[2]*2]

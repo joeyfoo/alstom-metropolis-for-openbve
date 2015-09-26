@@ -1,0 +1,718 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.1//EN" "http://www.w3.org/TR/xhtml11/DTD/xhtml11.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en">
+	<head>
+		<title>
+			Units
+		</title>
+		<link rel="stylesheet" href="blue.css" />
+		<meta name="keywords" content="Chashinai Railway, OdakyufanAts, odakyufan, openBVE" />
+		<meta http-equiv="Content-Type" content="text/html;charset=UTF-8" />
+	</head>
+	<body>
+		<table class="table-menu">
+			<colgroup>
+				<col class="first" />
+			</colgroup>
+			<thead>
+				<tr class="even">
+					<th colspan="2">
+						Units
+					</th>
+				</tr>
+			</thead>
+			<tfoot>
+				<tr class="even">
+					<td>
+						<a href="index.html">Back to Train Scripting Language</a>
+					</td>
+				</tr>
+			</tfoot>
+			<tbody>
+			</tbody>
+		</table>
+		<div>
+			All values in parameters are of a certain type, for example integers, floating-point numbers, times or strings. Some of these take predefined constants instead of numerical figures. On this page, you get an overview.
+		</div>
+		<ol class="contents">
+			<li>
+				<a href="#integers">Integers</a>
+				<ol>
+					<li>
+						<a href="#plain">Plain</a>
+					</li>
+					<li>
+						<a href="#range">Range</a>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<a href="#floatingpointnumbers">Floating-point numbers</a>
+				<ol>
+					<li>
+						<a href="#plain">Plain</a>
+					</li>
+					<li>
+						<a href="#ratios">Ratios</a>
+					</li>
+					<li>
+						<a href="#times">Times</a>
+					</li>
+				</ol>
+			</li>
+			<li>
+				<a href="#booleans">Booleans</a>
+			</li>
+			<li>
+				<a href="#keys">Keys</a>
+			</li>
+			<li>
+				<a href="#levers">Levers</a>
+				<ol>
+					<li>
+						<a href="#reverser">Reverser</a>
+					</li>
+					<li>
+						<a href="#power">Power</a>
+					</li>
+					<li>
+						<a href="#brakes">Brakes</a>
+					</li>
+				</ol>
+			</li>
+		</ol>
+		<div>
+			<class id="integer" />
+		</div>
+		<h2>
+			<a id="integers">Integers</a>
+		</h2>
+		<div>
+			Integers are whole numbers.
+		</div>
+		<h3>
+			<a id="plain">Plain</a>
+		</h3>
+		<div>
+			Examples: <br />
+			2
+			<br />
+			3
+			<br />
+		</div>
+		<div>
+			<class id="range" />
+		</div>
+		<h3>
+			<a id="range">Range</a>
+		</h3>
+		<div>
+			A range is a from/to type of integers. You can also specify multiple values separated by comma.
+		</div>
+		<table class="table-one-column">
+			<colgroup>
+				<col class="first" />
+			</colgroup>
+			<thead>
+				<tr class="even">
+					<th>
+						value
+					</th>
+					<th>
+						Meaning
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="even">
+					<td>
+						<em>A</em> - <em>B</em>
+					</td>
+					<td>
+						All values from A (inclusive) to B (inclusive)
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						<em>A</em>, <em>B</em>
+					</td>
+					<td>
+						Multiple values separated by comma
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						<em>value</em>
+					</td>
+					<td>
+						A single integer value.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			Examples: <br />
+			1
+			<br />
+			2, 3 <br />
+			2-5, 7-9
+		</div>
+		<div>
+			<class id="double" />
+		</div>
+		<h2>
+			<a id="floatingpointnumbers">Floating-point numbers</a>
+		</h2>
+		<div>
+			Floating-point numbers can take a decimal fraction.
+		</div>
+		<h3>
+			<a id="plain">Plain</a>
+		</h3>
+		<div>
+			Examples: <br />
+			1.945 <br />
+			2.445
+		</div>
+		<div>
+			<class id="ratio" />
+		</div>
+		<h3>
+			<a id="ratios">Ratios</a>
+		</h3>
+		<div>
+			Ratios are relative quantities, or percentages. You can enter them either directly (0 to 1), or using the per cent sign (0% to 100%). Depending on the context, values larger than 1 or 100% may also be allowed.
+		</div>
+		<table class="table-one-column">
+			<colgroup>
+				<col class="first" />
+			</colgroup>
+			<thead>
+				<tr class="even">
+					<th>
+						value
+					</th>
+					<th>
+						Meaning
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="even">
+					<td>
+						<em>number</em> %
+					</td>
+					<td>
+						Same as 0.01 times the number
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						<em>number</em>
+					</td>
+					<td>
+						Just enter a number directly
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			Examples: <br />
+			150 % <br />
+			1.5
+		</div>
+		<div>
+			<class id="time" />
+		</div>
+		<h3>
+			<a id="times">Times</a>
+		</h3>
+		<div>
+			A time must always be followed by any of the following units:
+		</div>
+		<table class="table-one-column">
+			<colgroup>
+				<col class="first" />
+			</colgroup>
+			<thead>
+				<tr class="even">
+					<th>
+						unit
+					</th>
+					<th>
+						Meaning
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="even">
+					<td>
+						ms <br />
+						millisecond <br />
+						milliseconds
+					</td>
+					<td>
+						The unit is the millisecond
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						s
+						<br />
+						second <br />
+						seconds
+					</td>
+					<td>
+						The unit is the second
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						min <br />
+						minute <br />
+						minutes
+					</td>
+					<td>
+						The unit is the minute
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			Example: <br />
+			5.5 seconds
+		</div>
+		<div>
+			<class id="boolean" />
+		</div>
+		<h2>
+			<a id="booleans">Booleans</a>
+		</h2>
+		<div>
+			A boolean is a yes/no type. The following values can be used:
+		</div>
+		<table class="table-one-column">
+			<colgroup>
+				<col class="first" />
+			</colgroup>
+			<thead>
+				<tr class="even">
+					<th>
+						value
+					</th>
+					<th>
+						Meaning
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="even">
+					<td>
+						no <br />
+						off <br />
+						false
+					</td>
+					<td>
+						no
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						yes <br />
+						on <br />
+						true
+					</td>
+					<td>
+						yes
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			Example: <br />
+			yes
+		</div>
+		<div>
+			<class id="key" />
+		</div>
+		<h2>
+			<a id="keys">Keys</a>
+		</h2>
+		<div>
+			You can use 16 different keys in your scripts. They are referred to with abstract names. This allows the user to remap them to anything else, including joysticks. You cannot access specific keys on the keyboard or joysticks directly.
+		</div>
+		<table class="table-one-column">
+			<colgroup>
+				<col class="first" />
+			</colgroup>
+			<thead>
+				<tr class="even">
+					<th>
+						Key
+					</th>
+					<th>
+						Default Assignment
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="even">
+					<td>
+						S
+					</td>
+					<td>
+						space
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						A1
+					</td>
+					<td>
+						insert
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						A2
+					</td>
+					<td>
+						delete
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						B1
+					</td>
+					<td>
+						home
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						B2
+					</td>
+					<td>
+						end
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						C1
+					</td>
+					<td>
+						page up
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						C2
+					</td>
+					<td>
+						page down
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						D2
+					</td>
+					<td>
+						2
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						D3
+					</td>
+					<td>
+						3
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						D4
+					</td>
+					<td>
+						4
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						D5
+					</td>
+					<td>
+						5
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						D6
+					</td>
+					<td>
+						6
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						D7
+					</td>
+					<td>
+						7
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						D8
+					</td>
+					<td>
+						8
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						D9
+					</td>
+					<td>
+						9
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						D0
+					</td>
+					<td>
+						0
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			Notes:
+		</div>
+		<ul class="bullet-plain">
+			<li>
+				There is no D1 key. In the default keyboard assignment, the 1 key is reserved for the emergency brakes for trains with a combined power/brake lever, therefore this key is not available to scripts.
+			</li>
+		</ul>
+		<h2>
+			<a id="levers">Levers</a>
+		</h2>
+		<div>
+			Levers include the reverser, power and brake notch.
+		</div>
+		<div>
+			<class id="reverser" />
+		</div>
+		<h3>
+			<a id="reverser">Reverser</a>
+		</h3>
+		<div>
+			The reverser can be set into the following positions:
+		</div>
+		<table class="table-one-column">
+			<colgroup>
+				<col class="first" />
+			</colgroup>
+			<thead>
+				<tr class="even">
+					<th>
+						value
+					</th>
+					<th>
+						Meaning
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="even">
+					<td>
+						B
+						<br />
+						backward
+					</td>
+					<td>
+						The backward position
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						N
+						<br />
+						null <br />
+						neutral
+					</td>
+					<td>
+						The neutral position
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						F
+						<br />
+						forward
+					</td>
+					<td>
+						The forward position
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			<class id="power" />
+		</div>
+		<h3>
+			<a id="power">Power</a>
+		</h3>
+		<div>
+			Power can be set into any of the following positions:
+		</div>
+		<table class="table-one-column">
+			<colgroup>
+				<col class="first" />
+			</colgroup>
+			<thead>
+				<tr class="even">
+					<th>
+						value
+					</th>
+					<th>
+						Meaning
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="even">
+					<td>
+						N
+						<br />
+						null <br />
+						neutral
+					</td>
+					<td>
+						The neutral position
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						P1 <br />
+						P2 <br />
+						P3 <br />
+						etc.
+					</td>
+					<td>
+						The specific power notch.
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						<em>number</em> %
+					</td>
+					<td>
+						How much percent of the power.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			Notes:
+		</div>
+		<ul class="bullet-plain">
+			<li>
+				If a train does not have the specified power notch, the highest available power notch is used.
+			</li>
+		</ul>
+		<div>
+			<class id="brakes" />
+		</div>
+		<h3>
+			<a id="brakes">Brakes</a>
+		</h3>
+		<div>
+			The brakes can be set into any of the following positions:
+		</div>
+		<table class="table-one-column">
+			<colgroup>
+				<col class="first" />
+			</colgroup>
+			<thead>
+				<tr class="even">
+					<th>
+						value
+					</th>
+					<th>
+						Meaning
+					</th>
+				</tr>
+			</thead>
+			<tbody>
+				<tr class="even">
+					<td>
+						N
+						<br />
+						null <br />
+						neutral
+					</td>
+					<td>
+						The neutral position
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						HLD <br />
+						hold <br />
+						hold brake(s)
+					</td>
+					<td>
+						The hold brake.
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						B1 <br />
+						B2 <br />
+						B3 <br />
+						etc.
+					</td>
+					<td>
+						The specific brake notch.
+					</td>
+				</tr>
+				<tr class="odd">
+					<td>
+						<em>number</em> %
+					</td>
+					<td>
+						How much percent of the service brakes.
+					</td>
+				</tr>
+				<tr class="even">
+					<td>
+						EMG <br />
+						emergency <br />
+						emergency brake(s)
+					</td>
+					<td>
+						The emergency brakes.
+					</td>
+				</tr>
+			</tbody>
+		</table>
+		<div>
+			Notes:
+		</div>
+		<ul class="bullet-plain">
+			<li>
+				For trains that do not have a hold brake, the hold brake position is the same as the neutral position.
+			</li>
+			<li>
+				If a train does not have the specified brake notch, the highest available brake notch is used.
+			</li>
+			<li>
+				For trains with the automatic air brake, brakes notches B1, B2, B3 etc. are the same as 100% brake application.
+			</li>
+			<li>
+				For trains with the automatic air brake, a percentage means that the train tries to fill the brake cylinder to that degree.
+			</li>
+		</ul>
+	</body>
+</html>

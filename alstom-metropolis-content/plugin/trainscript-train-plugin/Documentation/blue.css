@@ -1,0 +1,336 @@
+﻿body {
+	background-color : #fff;
+	color : #000;
+	font-family : sans-serif;
+	font-size : 13px;
+	margin : 0px auto 0px auto;
+	max-width : 960px;
+	padding : 20px 20px 20px 20px;
+}
+h2 {
+	font-size : 13px;
+	font-weight : normal;
+	color : white;
+	padding : 5px 5px 5px 10px;
+	margin : 30px 00px 0px 0px;
+	background-color : #05a;
+}
+h3 {
+	font-size : 13px;
+	font-weight : bold;
+	color : #05a;
+	margin : 25px 0px 0px 0px;
+}
+div {
+	margin : 10px 0px 10px 0px;
+	line-height : 17px;
+}
+.contents {
+	padding : 10px 10px 10px 10px;
+	list-style-position : inside;
+	text-align : left;
+	border-collapse : collapse;
+	border : 1px solid #48b;
+}
+
+/* ---------- *
+ * Menu table *
+ * ---------- */
+
+.table-menu {
+	padding : 0px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	text-align : left;
+	border-collapse : collapse;
+	width : 100%;
+}
+.table-menu th {
+	font-size : 24px;
+	font-weight : normal;
+	padding : 5px 10px 5px 10px;
+	margin : 0px 0px 0px 0px;
+	background : #05a;
+	border-top : 1px solid #fff;
+	border-bottom : 1px solid #fff;
+	border-left : 1px solid #fff;
+	border-right : 1px solid #fff;
+	color : #fff;
+}
+.table-menu tbody td {
+	padding : 0px 0px 0px 0px;
+	margin : 0px 0px 0px 0px;
+	background : #fff; 
+	color : #000;
+	line-height : 0px;
+	border-right : 1px solid #fff;
+}
+.table-menu tfoot td {
+	font-size : 13px;
+	font-weight : normal;
+	padding : 5px 10px 5px 10px;
+	margin : 0px 0px 0px 0px;
+	background : #05a;
+	border-top : 1px solid #fff;
+	border-bottom : 1px solid #fff;
+	border-left : 1px solid #fff;
+	border-right : 1px solid #fff;
+	color : #fff;
+}
+.table-menu a {
+	color : #fff;
+	text-decoration : none;
+}
+.table-menu a:hover {
+	text-decoration : underline;
+}
+
+
+/* ---------------------- *
+ * Plain horizontal table *
+ * ---------------------- */
+
+.table-plain-h {
+	background : #fff;
+	margin : 5px 0px 5px 0px;
+	border-collapse : collapse;
+	text-align : left;
+	font-size : 12px;
+}
+.table-plain-h th {
+	font-size : 14px;
+	font-weight : normal;
+	color : #000;
+	padding : 5px 15px 5px 15px;
+	border-bottom : 1px solid #05a;
+}
+.table-plain-h tbody td {
+	color : #000;
+	border-top : 1px solid #69c;
+	border-bottom : 1px solid #69c;
+	padding : 5px 15px 5px 15px;
+}
+.table-plain-h tfoot td {
+	color : #000;
+	padding : 5px 15px 5px 15px;
+	border-top : 1px solid #05a;
+}
+
+/* -------------------- *
+ * Plain vertical table *
+ * -------------------- */
+
+.table-plain-v {
+	margin : 5px 0px 5px 0px;
+	text-align : left;
+	border-collapse : collapse;
+	font-size : 12px;
+}
+.table-plain-v th {
+	padding : 5px 15px 5px 15px;
+	font-weight : normal;
+	font-size : 14px;
+	border-bottom : 1px solid #05a;
+	border-right : 30px solid #fff;
+	border-left : 30px solid #fff;
+	color : #000;
+}
+.table-plain-v td {
+	padding : 5px 15px 5px 15px;
+	border-right : 30px solid #fff;
+	border-left : 30px solid #fff;
+	color : #000;
+}
+
+/* ---------------------- *
+ * Horizontal zebra table *
+ * ---------------------- */
+
+.table-zebra-h {
+	margin : 5px 0px 5px 0px;
+	text-align : left;
+	border-collapse : collapse;
+	font-size : 12px;
+	background : #fff; 
+}
+.table-zebra-h th {
+	font-size : 14px;
+	font-weight : normal;
+	padding : 5px 10px 5px 10px;
+	color : #000;
+}
+.table-zebra-h td {
+	padding : 5px 10px 5px 10px;
+	color : #000;
+}
+.table-zebra-h .odd {
+	background : #ddf; 
+}
+
+/* ---------------- *
+ * One-column table *
+ * ---------------- */
+
+.table-one-column {
+	margin : 5px 0px 5px 0px;
+	text-align : left;
+	border-collapse : collapse;
+	font-size : 12px;
+}
+.table-one-column th {
+	font-size : 14px;
+	font-weight : normal;
+	padding : 4px 10px 4px 10px;
+	color : #000;
+}
+.table-one-column tbody td {
+	padding : 4px 10px 4px 10px;
+	color : #000;
+	border-top : 1px solid #9bd;
+	border-bottom : 1px solid #9bd;
+}
+.table-one-column tfoot td {
+	font-size : 10px;
+	padding : 4px 10px 4px 10px;
+	color : #000;
+	border-top : 1px solid #9bd;
+}
+.table-one-column .first {
+	background : #cdf;
+}
+
+/* -------------------- *
+ * Horizontal box table *
+ * -------------------- */
+
+.table-box-h {
+	margin : 5px 0px 5px 0px;
+	text-align : left;
+	border-collapse : collapse;
+	border : 1px solid #05a;
+	font-size : 12px;
+}
+.table-box-h th {
+	font-size : 13px;
+	font-weight : normal;
+	padding : 5px 10px 5px 10px;
+	background : #ddf;
+	border-bottom : 1px solid #05a;
+	color : #000;
+}
+.table-box-h td {
+	padding : 5px 10px 5px 10px;
+	background : #fff; 
+	color : #000;
+}
+.table-box-h tbody td {
+	border-bottom : 1px solid #05a;
+}
+.table-box-h tbody tr:hover td {
+	background : #ddf;
+	color : #000;
+}
+
+/* ------------------ *
+ * Vertical box table *
+ * ------------------ */
+
+.table-box-v {
+	margin : 5px 0px 5px 0px;
+	text-align : center;
+	border-collapse : collapse;
+	border-top : 7px solid #05a;
+	border-bottom : 7px solid #05a;
+	font-size : 12px;
+}
+.table-box-v th {
+	font-size : 13px;
+	font-weight : normal;
+	padding : 5px 10px 5px 10px;
+	background : #cdf;
+	border-right : 1px solid #05a;
+	border-left : 1px solid #05a;
+	color : #068;
+}
+.table-box-v thead tr {
+	border-bottom : 1px solid #05a;
+}
+.table-box-v tbody td {
+	padding : 5px 10px 5px 10px;
+	background : #fff; 
+	border-right : 1px solid #05a;
+	border-left : 1px solid #05a;
+	color : #468;
+}
+.table-box-v tfoot td {
+	padding : 5px 10px 5px 10px;
+	background : #cdf; 
+	border-right : 1px solid #05a;
+	border-left : 1px solid #05a;
+	color : #468;
+}
+.table-box-v tfoot tr {
+	border-top : 1px solid #05a;
+}
+
+/* ---------- *
+ * Grid table *
+ * ---------- */
+
+.table-grid {
+	margin : 5px 0px 5px 0px;
+	text-align : left;
+	border-collapse : collapse;
+	border : 1px solid #fff;
+	font-size : 12px;
+}
+.table-grid th {
+	font-size : 13px;
+	font-weight : normal;
+	padding : 5px 10px 5px 10px;
+	background : #cdf;
+	border-top : 1px solid #05a;
+	border-bottom : 1px solid #05a;
+	border-left : 1px solid #05a;
+	border-right : 1px solid #05a;
+	color : #000;
+}
+.table-grid td {
+	padding : 5px 10px 5px 10px;
+	background : #fff; 
+	border-top : 1px solid #05a;
+	border-bottom : 1px solid #05a;
+	border-left : 1px solid #05a;
+	border-right : 1px solid #05a;
+	color : #000;
+}
+
+/* --------------- *
+ * Newspaper table *
+ * --------------- */
+
+.table-newspaper {
+	margin : 5px 0px 5px 0px;
+	max-width : 70%;
+	text-align : left;
+	border-collapse : collapse;
+	border : 1px solid #05a;
+	font-size : 12px;
+}
+.table-newspaper th {
+	padding : 5px 10px 5px 10px;
+	font-weight : normal;
+	font-size : 14px;
+	color : #000;
+}
+.table-newspaper tbody {
+	background : #cdf;
+}
+.table-newspaper td {
+	padding : 5px 10px 5px 10px;
+	color : #000;
+}
+.table-newspaper tfoot tr td {
+	font-size : 10px;
+	padding : 5px 10px 5px 10px;
+	color : #000;
+}

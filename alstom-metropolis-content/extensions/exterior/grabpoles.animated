@@ -1,0 +1,67 @@
+[Include]
+grabpoles_single.csv
+grabpoles_single_link.csv
+handgrips.animated
+Position = 0, 0, 0
+
+[Include]
+grabpoles_single.csv
+Position = 0, 0, 1.46
+
+[Include]
+grabpoles_multiple_b.csv
+Position = 0, 0, 2.93
+
+[Include]
+grabpoles_single.csv
+Position = 0, 0, 4.34
+
+[Include]
+grabpoles_single.csv
+grabpoles_single_link.csv
+vpis.animated
+handgrips.animated
+Position = 0, 0, 5.86
+
+[Include]
+grabpoles_single.csv
+Position = 0, 0, 7.38
+
+[Include]
+grabpoles_multiple_b.csv
+Position = 0, 0, 8.8
+
+[Include]
+grabpoles_single.csv
+Position = 0, 0, 10.5
+
+[Include]
+grabpoles_single.csv
+Position = 0, 0, -1.46
+
+[Include]
+grabpoles_multiple_a.csv
+Position = 0, 0, -2.93
+
+[Include]
+grabpoles_single.csv
+Position = 0, 0, -4.34
+
+[Include]
+grabpoles_single.csv
+grabpoles_single_link.csv
+vpis.animated
+handgrips.animated
+Position = 0, 0, -5.86
+
+[Include]
+grabpoles_single.csv
+Position = 0, 0, -7.38
+
+[Include]
+grabpoles_multiple_a.csv
+Position = 0, 0, -8.8
+
+[Include]
+grabpoles_single.csv
+Position = 0, 0, -10.5

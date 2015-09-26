@@ -1,0 +1,29 @@
+﻿;animated hr2
+CreateMeshBuilder
+AddVertex,-0.045,2.077,-0.073
+AddVertex,-0.02,2.077,-0.073
+AddVertex,-0.02,2.042,-0.073
+AddVertex,-0.045,2.042,-0.073
+AddFace,0,1,2,3
+LoadTexture,vpis_digits.png
+SetEmissiveColor, 255, 255, 255
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,0.1
+SetTextureCoordinates,3,0,0.1
+
+RotateAll, 0, 1, 0, 180
+
+;animated hr2
+CreateMeshBuilder
+AddVertex,-0.045,2.077,-0.073
+AddVertex,-0.02,2.077,-0.073
+AddVertex,-0.02,2.042,-0.073
+AddVertex,-0.045,2.042,-0.073
+AddFace,0,1,2,3
+LoadTexture,vpis_digits.png
+SetEmissiveColor, 255, 255, 255
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,0.1
+SetTextureCoordinates,3,0,0.1

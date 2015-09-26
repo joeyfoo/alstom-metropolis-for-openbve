@@ -1,0 +1,612 @@
+CreateMeshBuilder,
+AddVertex, -1.49, 1.05, 11.4
+AddVertex, -1.49, 1.05, -11.4
+AddVertex, -1.46, 0.65, -11.4
+AddVertex, -1.46, 0.65, 11.4
+AddFace,0,1,2,3
+LoadTexture, doors_ext.png
+SetTextureCoordinates,0,0,0.8545454545
+SetTextureCoordinates,1,1,0.8545454545
+SetTextureCoordinates,2,1,1
+SetTextureCoordinates,3,0,1
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -1.49, 1.5, 11.4
+AddVertex, -1.49, 1.5, -11.4
+AddVertex, -1.49, 1.05, -11.4
+AddVertex, -1.49, 1.05, 11.4
+AddFace,0,1,2,3
+LoadTexture, doors_ext.png
+SetTextureCoordinates,0,0,0.6909090909
+SetTextureCoordinates,1,1,0.6909090909
+SetTextureCoordinates,2,1,0.8545454545
+SetTextureCoordinates,3,0,0.8545454545
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -1.44, 2, 11.4
+AddVertex, -1.44, 2, -11.4
+AddVertex, -1.49, 1.5, -11.4
+AddVertex, -1.49, 1.5, 11.4
+AddFace,0,1,2,3
+LoadTexture, doors_ext.png
+SetTextureCoordinates,0,0,0.5090909091
+SetTextureCoordinates,1,1,0.5090909091
+SetTextureCoordinates,2,1,0.6909090909
+SetTextureCoordinates,3,0,0.6909090909
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -1.33, 2.55, 11.4
+AddVertex, -1.33, 2.55, -11.4
+AddVertex, -1.44, 2, -11.4
+AddVertex, -1.44, 2, 11.4
+AddFace,0,1,2,3
+LoadTexture, doors_ext.png
+SetTextureCoordinates,0,0,0.3090909091
+SetTextureCoordinates,1,1,0.3090909091
+SetTextureCoordinates,2,1,0.5090909091
+SetTextureCoordinates,3,0,0.5090909091
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -1.20, 2.92, 11.4
+AddVertex, -1.20, 2.92, -11.4
+AddVertex, -1.33, 2.55, -11.4
+AddVertex, -1.33, 2.55, 11.4
+AddFace,0,1,2,3
+LoadTexture, doors_ext.png
+SetTextureCoordinates,0,0,0.1745454545
+SetTextureCoordinates,1,1,0.1745454545
+SetTextureCoordinates,2,1,0.3090909091
+SetTextureCoordinates,3,0,0.3090909091
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -1.08, 3.1, 11.4
+AddVertex, -1.08, 3.1, -11.4
+AddVertex, -1.20, 2.92, -11.4
+AddVertex, -1.20, 2.92, 11.4
+AddFace,0,1,2,3
+LoadTexture, doors_ext.png
+SetTextureCoordinates,0,0,0.1090909091
+SetTextureCoordinates,1,1,0.1090909091
+SetTextureCoordinates,2,1,0.1745454545
+SetTextureCoordinates,3,0,0.1745454545
+SetDecalTransparentColor, 0, 0, 255
+
+TranslateAll, -0.05
+
+CreateMeshBuilder,
+AddVertex, -1.49, 1.05, 11.4
+AddVertex, -1.49, 1.05, -11.4
+AddVertex, -1.46, 0.65, -11.4
+AddVertex, -1.46, 0.65, 11.4
+AddFace,3,2,1,0
+LoadTexture, doors_int.png
+SetEmissiveColor,255,255,255
+SetTextureCoordinates,0,0,0.8545454545
+SetTextureCoordinates,1,1,0.8545454545
+SetTextureCoordinates,2,1,1
+SetTextureCoordinates,3,0,1
+SetDecalTransparentColor, 0, 0, 255
+
+
+CreateMeshBuilder,
+AddVertex, -1.49, 1.5, 11.4
+AddVertex, -1.49, 1.5, -11.4
+AddVertex, -1.49, 1.05, -11.4
+AddVertex, -1.49, 1.05, 11.4
+AddFace,3,2,1,0
+LoadTexture, doors_int.png
+SetEmissiveColor,255,255,255
+SetTextureCoordinates,0,0,0.6909090909
+SetTextureCoordinates,1,1,0.6909090909
+SetTextureCoordinates,2,1,0.8545454545
+SetTextureCoordinates,3,0,0.8545454545
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -1.44, 2, 11.4
+AddVertex, -1.44, 2, -11.4
+AddVertex, -1.49, 1.5, -11.4
+AddVertex, -1.49, 1.5, 11.4
+AddFace,3,2,1,0
+LoadTexture, doors_int.png
+SetEmissiveColor,255,255,255
+SetTextureCoordinates,0,0,0.5090909091
+SetTextureCoordinates,1,1,0.5090909091
+SetTextureCoordinates,2,1,0.6909090909
+SetTextureCoordinates,3,0,0.6909090909
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -1.33, 2.55, 11.4
+AddVertex, -1.33, 2.55, -11.4
+AddVertex, -1.44, 2, -11.4
+AddVertex, -1.44, 2, 11.4
+AddFace,3,2,1,0
+LoadTexture, doors_int.png
+SetEmissiveColor,255,255,255
+SetTextureCoordinates,0,0,0.3090909091
+SetTextureCoordinates,1,1,0.3090909091
+SetTextureCoordinates,2,1,0.5090909091
+SetTextureCoordinates,3,0,0.5090909091
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -1.20, 2.92, 11.4
+AddVertex, -1.20, 2.92, -11.4
+AddVertex, -1.33, 2.55, -11.4
+AddVertex, -1.33, 2.55, 11.4
+AddFace,3,2,1,0
+LoadTexture, doors_int.png
+SetEmissiveColor,255,255,255
+SetTextureCoordinates,0,0,0.1745454545
+SetTextureCoordinates,1,1,0.1745454545
+SetTextureCoordinates,2,1,0.3090909091
+SetTextureCoordinates,3,0,0.3090909091
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex, -1.08, 3.1, 11.4
+AddVertex, -1.08, 3.1, -11.4
+AddVertex, -1.20, 2.92, -11.4
+AddVertex, -1.20, 2.92, 11.4
+AddFace,3,2,1,0
+LoadTexture, doors_int.png
+SetEmissiveColor,255,255,255
+SetTextureCoordinates,0,0,0.1090909091
+SetTextureCoordinates,1,1,0.1090909091
+SetTextureCoordinates,2,1,0.1745454545
+SetTextureCoordinates,3,0,0.1745454545
+SetDecalTransparentColor, 0, 0, 255
+
+
+
+
+
+CreateMeshBuilder,
+AddVertex, -1.49, 2, -8.81
+AddVertex, -1.44, 2, -8.81
+AddVertex, -1.49, 1.5, -8.81
+AddVertex, -1.54, 1.5, -8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.38, 2.55, -8.81
+AddVertex, -1.33, 2.55, -8.81
+AddVertex, -1.44, 2, -8.81
+AddVertex, -1.49, 2, -8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.25, 2.92, -8.81
+AddVertex, -1.20, 2.92, -8.81
+AddVertex, -1.33, 2.55, -8.81
+AddVertex, -1.38, 2.55, -8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.2, 2.99, -8.81
+AddVertex, -1.15, 2.99, -8.81
+AddVertex, -1.20, 2.92, -8.81
+AddVertex, -1.25, 2.92, -8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.05, -8.81
+AddVertex, -1.49, 1.05, -8.81
+AddVertex, -1.48, 0.89, -8.81
+AddVertex, -1.53, 0.89, -8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.5, -8.81
+AddVertex, -1.49, 1.5, -8.81
+AddVertex, -1.49, 1.05, -8.81
+AddVertex, -1.54, 1.05, -8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+
+
+
+
+
+CreateMeshBuilder,
+AddVertex, -1.49, 2, -2.95
+AddVertex, -1.44, 2, -2.95
+AddVertex, -1.49, 1.5, -2.95
+AddVertex, -1.54, 1.5, -2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.38, 2.55, -2.95
+AddVertex, -1.33, 2.55, -2.95
+AddVertex, -1.44, 2, -2.95
+AddVertex, -1.49, 2, -2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.25, 2.92, -2.95
+AddVertex, -1.20, 2.92, -2.95
+AddVertex, -1.33, 2.55, -2.95
+AddVertex, -1.38, 2.55, -2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.2, 2.99, -2.95
+AddVertex, -1.15, 2.99, -2.95
+AddVertex, -1.20, 2.92, -2.95
+AddVertex, -1.25, 2.92, -2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.05, -2.95
+AddVertex, -1.49, 1.05, -2.95
+AddVertex, -1.48, 0.89, -2.95
+AddVertex, -1.53, 0.89, -2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.5, -2.95
+AddVertex, -1.49, 1.5, -2.95
+AddVertex, -1.49, 1.05, -2.95
+AddVertex, -1.54, 1.05, -2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+
+
+
+
+CreateMeshBuilder,
+AddVertex, -1.49, 2, 8.81
+AddVertex, -1.44, 2, 8.81
+AddVertex, -1.49, 1.5, 8.81
+AddVertex, -1.54, 1.5, 8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.38, 2.55, 8.81
+AddVertex, -1.33, 2.55, 8.81
+AddVertex, -1.44, 2, 8.81
+AddVertex, -1.49, 2, 8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.25, 2.92, 8.81
+AddVertex, -1.20, 2.92, 8.81
+AddVertex, -1.33, 2.55, 8.81
+AddVertex, -1.38, 2.55, 8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.2, 2.99, 8.81
+AddVertex, -1.15, 2.99, 8.81
+AddVertex, -1.20, 2.92, 8.81
+AddVertex, -1.25, 2.92, 8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.05, 8.81
+AddVertex, -1.49, 1.05, 8.81
+AddVertex, -1.48, 0.89, 8.81
+AddVertex, -1.53, 0.89, 8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.5, 8.81
+AddVertex, -1.49, 1.5, 8.81
+AddVertex, -1.49, 1.05, 8.81
+AddVertex, -1.54, 1.05, 8.81
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+
+
+
+
+
+CreateMeshBuilder,
+AddVertex, -1.49, 2, 2.95
+AddVertex, -1.44, 2, 2.95
+AddVertex, -1.49, 1.5, 2.95
+AddVertex, -1.54, 1.5, 2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.38, 2.55, 2.95
+AddVertex, -1.33, 2.55, 2.95
+AddVertex, -1.44, 2, 2.95
+AddVertex, -1.49, 2, 2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.25, 2.92, 2.95
+AddVertex, -1.20, 2.92, 2.95
+AddVertex, -1.33, 2.55, 2.95
+AddVertex, -1.38, 2.55, 2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.2, 2.99, 2.95
+AddVertex, -1.15, 2.99, 2.95
+AddVertex, -1.20, 2.92, 2.95
+AddVertex, -1.25, 2.92, 2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.05, 2.95
+AddVertex, -1.49, 1.05, 2.95
+AddVertex, -1.48, 0.89, 2.95
+AddVertex, -1.53, 0.89, 2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.5, 2.95
+AddVertex, -1.49, 1.5, 2.95
+AddVertex, -1.49, 1.05, 2.95
+AddVertex, -1.54, 1.05, 2.95
+AddFace, 0, 1, 2, 3
+SetColor, 50, 50, 50
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+CreateMeshBuilder,
+AddVertex, -1.49, 2, -7.89
+AddVertex, -1.44, 2, -7.89
+AddVertex, -1.49, 1.5, -7.89
+AddVertex, -1.54, 1.5, -7.89
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.38, 2.55, -7.89
+AddVertex, -1.33, 2.55, -7.89
+AddVertex, -1.44, 2, -7.89
+AddVertex, -1.49, 2, -7.89
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.25, 2.92, -7.89
+AddVertex, -1.20, 2.92, -7.89
+AddVertex, -1.33, 2.55, -7.89
+AddVertex, -1.38, 2.55, -7.89
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.2, 2.99, -7.89
+AddVertex, -1.15, 2.99, -7.89
+AddVertex, -1.20, 2.92, -7.89
+AddVertex, -1.25, 2.92, -7.89
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.05, -7.89
+AddVertex, -1.49, 1.05, -7.89
+AddVertex, -1.48, 0.89, -7.89
+AddVertex, -1.53, 0.89, -7.89
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.5, -7.89
+AddVertex, -1.49, 1.5, -7.89
+AddVertex, -1.49, 1.05, -7.89
+AddVertex, -1.54, 1.05, -7.89
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+
+
+
+
+
+CreateMeshBuilder,
+AddVertex, -1.49, 2, -2.04
+AddVertex, -1.44, 2, -2.04
+AddVertex, -1.49, 1.5, -2.04
+AddVertex, -1.54, 1.5, -2.04
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.38, 2.55, -2.04
+AddVertex, -1.33, 2.55, -2.04
+AddVertex, -1.44, 2, -2.04
+AddVertex, -1.49, 2, -2.04
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.25, 2.92, -2.04
+AddVertex, -1.20, 2.92, -2.04
+AddVertex, -1.33, 2.55, -2.04
+AddVertex, -1.38, 2.55, -2.04
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.2, 2.99, -2.04
+AddVertex, -1.15, 2.99, -2.04
+AddVertex, -1.20, 2.92, -2.04
+AddVertex, -1.25, 2.92, -2.04
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.05, -2.04
+AddVertex, -1.49, 1.05, -2.04
+AddVertex, -1.48, 0.89, -2.04
+AddVertex, -1.53, 0.89, -2.04
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.5, -2.04
+AddVertex, -1.49, 1.5, -2.04
+AddVertex, -1.49, 1.05, -2.04
+AddVertex, -1.54, 1.05, -2.04
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+
+
+
+
+CreateMeshBuilder,
+AddVertex, -1.49, 2, 9.72
+AddVertex, -1.44, 2, 9.72
+AddVertex, -1.49, 1.5, 9.72
+AddVertex, -1.54, 1.5, 9.72
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.38, 2.55, 9.72
+AddVertex, -1.33, 2.55, 9.72
+AddVertex, -1.44, 2, 9.72
+AddVertex, -1.49, 2, 9.72
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.25, 2.92, 9.72
+AddVertex, -1.20, 2.92, 9.72
+AddVertex, -1.33, 2.55, 9.72
+AddVertex, -1.38, 2.55, 9.72
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.2, 2.99, 9.72
+AddVertex, -1.15, 2.99, 9.72
+AddVertex, -1.20, 2.92, 9.72
+AddVertex, -1.25, 2.92, 9.72
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.05, 9.72
+AddVertex, -1.49, 1.05, 9.72
+AddVertex, -1.48, 0.89, 9.72
+AddVertex, -1.53, 0.89, 9.72
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.5, 9.72
+AddVertex, -1.49, 1.5, 9.72
+AddVertex, -1.49, 1.05, 9.72
+AddVertex, -1.54, 1.05, 9.72
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+
+
+
+
+
+CreateMeshBuilder,
+AddVertex, -1.49, 2, 3.865
+AddVertex, -1.44, 2, 3.865
+AddVertex, -1.49, 1.5, 3.865
+AddVertex, -1.54, 1.5, 3.865
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.38, 2.55, 3.865
+AddVertex, -1.33, 2.55, 3.865
+AddVertex, -1.44, 2, 3.865
+AddVertex, -1.49, 2, 3.865
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.25, 2.92, 3.865
+AddVertex, -1.20, 2.92, 3.865
+AddVertex, -1.33, 2.55, 3.865
+AddVertex, -1.38, 2.55, 3.865
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.2, 2.99, 3.865
+AddVertex, -1.15, 2.99, 3.865
+AddVertex, -1.20, 2.92, 3.865
+AddVertex, -1.25, 2.92, 3.865
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.05, 3.865
+AddVertex, -1.49, 1.05, 3.865
+AddVertex, -1.48, 0.89, 3.865
+AddVertex, -1.53, 0.89, 3.865
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+CreateMeshBuilder,
+AddVertex, -1.54, 1.5, 3.865
+AddVertex, -1.49, 1.5, 3.865
+AddVertex, -1.49, 1.05, 3.865
+AddVertex, -1.54, 1.05, 3.865
+AddFace, 3,2,1,0
+SetColor, 50, 50, 50
+
+TranslateAll, 0, 0.20, 0
+ScaleAll, 1, 1, -1

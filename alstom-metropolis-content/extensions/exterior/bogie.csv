@@ -1,0 +1,90 @@
+CreateMeshBuilder,
+AddVertex,-0.85, 0.9, 1.9
+AddVertex,-0.85, 0.9, -1.9
+AddVertex,-0.85, 0, -1.9
+AddVertex,-0.85, 0, 1.9
+AddFace,0,1,2,3
+AddFace,3,2,1,0
+LoadTexture,bogie_cover.png
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,1
+SetTextureCoordinates,3,0,1
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+AddVertex,0.85, 0.9, -1.9
+AddVertex,0.85, 0.9, 1.9
+AddVertex,0.85, 0, 1.9
+AddVertex,0.85, 0, -1.9
+AddFace,0,1,2,3
+AddFace,3,2,1,0
+LoadTexture,bogie_cover.png
+SetTextureCoordinates,0,0,0
+SetTextureCoordinates,1,1,0
+SetTextureCoordinates,2,1,1
+SetTextureCoordinates,3,0,1
+SetDecalTransparentColor, 0, 0, 255
+
+CreateMeshBuilder,
+Cylinder,25,0.425,0.425,0.1
+Rotate,0,0,1,90
+Translate,-0.7675,0.425,1.25
+SetColor,40,40,40
+CreateMeshBuilder,
+Cylinder,25,0.475,0.475,0.015
+Rotate,0,0,1,90
+Translate,-0.71,0.425,1.25
+SetColor,100,100,100
+
+CreateMeshBuilder,
+Cylinder,25,0.425,0.425,0.1
+Rotate,0,0,1,90
+Translate,-0.7675,0.425,-1.25
+SetColor,40,40,40
+CreateMeshBuilder,
+Cylinder,25,0.475,0.475,0.015
+Rotate,0,0,1,90
+Translate,-0.71,0.425,-1.25
+SetColor,100,100,100
+
+CreateMeshBuilder,
+Cylinder,25,0.425,0.425,0.1
+Rotate,0,0,1,90
+Translate,0.7675,0.425,1.25
+SetColor,40,40,40
+CreateMeshBuilder,
+Cylinder,25,0.475,0.475,0.015
+Rotate,0,0,1,90
+Translate,0.71,0.425,1.25
+SetColor,100,100,100
+
+CreateMeshBuilder,
+Cylinder,25,0.425,0.425,0.1
+Rotate,0,0,1,90
+Translate,0.7675,0.425,-1.25
+SetColor,40,40,40
+CreateMeshBuilder,
+Cylinder,25,0.475,0.475,0.015
+Rotate,0,0,1,90
+Translate,0.71,0.425,-1.25
+SetColor,100,100,100
+
+
+
+CreateMeshBuilder,
+Cylinder,5,0.05,0.05,1.4
+Rotate,0,0,1,90
+Translate,0,0.425,-1.25
+SetColor,40,40,40
+CreateMeshBuilder,
+Cylinder,5,0.05,0.05,1.4
+Rotate,0,0,1,90
+Translate,0,0.425,1.25
+SetColor,40,40,40
+
+
+CreateMeshBuilder,
+Cube,0.7,0.3,0.7
+Translate,0,0.55,0
+SetColor,20,20,20

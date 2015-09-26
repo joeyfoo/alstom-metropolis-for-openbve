@@ -1,0 +1,19 @@
+[Include]
+Dt_int.csv
+Position = 0, 0, 0
+
+[Include]
+7seats.csv
+Position = 0, 0, 0
+
+[Include]
+7seats.csv
+Position = 0, 0, -5.875
+
+[Include]
+7seats.csv
+Position = 0, 0, 5.875
+
+[Include]
+2seats.csv
+Position = 0, 0, 0
