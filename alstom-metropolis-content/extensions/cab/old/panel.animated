@@ -21,14 +21,11 @@ StateFunction = rightDoors != 0
 
 [Object]
 States = modeselector.csv
-
-[Object]
-States = modeselector.csv
 Position = 1.083,0.85,11.298
 ;R = 0.3
 ;N = -0.6
 ;F = 0
-RotateYFunction = if[reverserNotch==-1,0.3,if[reverserNotch==1,0,-0.6]]
+RotateYFunction = -0.6 + pluginState[1]*0.3
 RotateYDamping = 30, 0.75
 
 [Object]
